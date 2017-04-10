@@ -1,0 +1,10 @@
+Sources 
+
+https://discussions.udacity.com/t/feature-importances-/173319/6
+https://discussions.udacity.com/t/gridsearchcv-and-testingtraining-data/36107/4
+https://discussions.udacity.com/t/any-suggestion-on-speeding-up-the-final-project-taking-hours-to-run-tester-py/159563
+https://discussions.udacity.com/t/webcast-builidng-models-with-gridsearchcv-and-pipelines-thursday-11-feb-2015-at-6pm-pacific-time/47412
+https://discussions.udacity.com/t/how-f-classif-works-in-k-best-feature-selection/46923/2
+http://protips.maxmasnick.com/hide-code-when-sharing-ipython-notebooks (How I toggled my code in ipython notebook)
+http://www.tablesgenerator.com/html_tables
+https://www.w3schools.com/css/css_table.asp
