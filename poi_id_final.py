@@ -40,16 +40,13 @@ def kbest():
 
 
 
-
-
-
 def plot_kbest():
       with open("kbest_scores.pkl", "r") as file:
         table = pickle.load(file)
       table = pd.DataFrame(table, columns=["Number_of_Features", "Precision", "Recall"])
       table = pd.melt(table, id_vars=["Number_of_Features"], value_vars=["Precision", "Recall"],
                   var_name="Performance_Metric", value_name="Score")
-      print table
+      print(table)
       sns.pointplot(x="Number_of_Features", y="Score", hue="Performance_Metric", data=table)
       sns.plt.title("Precision and Recall vs Number of Features")
       sns.plt.ylabel("Score")
@@ -121,7 +118,7 @@ def get_importances():
     feats_used = feature_list[1:]
     importances = clf.named_steps['clf'].feature_importances_
     for i, imp in enumerate(importances):
-           print (i, feats_used[i], imp)
+           print(i, feats_used[i], imp)
 
 def features_used(features, clf):
     feat_bool = clf.named_steps['selector'].get_support()
@@ -266,8 +263,6 @@ adaboost_param_grid = {'clf__n_estimators':(12, 50)}
 #clf, my_dataset= run_pipe(tree, tree_param_grid)
 #clf, my_dataset= run_pipe(forest, forest_param_grid)
 #clf, my_dataset= run_pipe(ada_boost, adaboost_param_grid)
-
-
 
 #table = kbest()
 my_dataset = clean_data(data_dict)
